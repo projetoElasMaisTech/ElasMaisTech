@@ -103,10 +103,5 @@ input.invalid {
 
 /* login */
 
-.header-menu{
-  display: none;
-}
 
-.header-menu.visible {
-  display: block;
-}
+
