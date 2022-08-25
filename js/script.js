@@ -3,11 +3,16 @@ const email = document.querySelector('#inputEmail');
 const password = document.querySelector('#inputPassword');
  const nameError = document.getElementById("nameError");
  const emailError = document.getElementById("emailError");
+ const menuLogado = document.getElementsByClassName("header-menu");
+ const emailLogin = document.getElementById("loginEmail")
+
 
 
 userName.addEventListener('focusout', validateName);
 email.addEventListener('focusout', validateEmail);
 password.addEventListener('focusout', validatePassword);
+emailLogin.addEventListener('focusout', validateEmailLogin);
+
 
 
 function validateName(e) {
@@ -44,6 +49,7 @@ function validateEmail(e) {
    emailError.setAttribute("aria-invalid", false);
   }
   return valid;
+  
 }
 
 function validatePassword(e) {
@@ -62,5 +68,34 @@ function validatePassword(e) {
    passwordError.setAttribute("aria-invalid", false);
 
   }
+  
   return valid;
 }
+
+//validação form login
+function validateEmailLogin(e) {
+  e.preventDefault();
+  let valid = true;
+
+  if (!emailLogin.value) {
+   emailLoginError.classList.add("visible");
+   emailLogin.classList.add("invalid");
+   emailLoginError.setAttribute("aria-hidden", false);
+   emailLoginError.setAttribute("aria-invalid", true);
+  } else {
+    emailLoginError.classList.remove("visible");
+   emailLogin.classList.remove("invalid");
+   emailLoginError.setAttribute("aria-hidden", true);
+   emailLoginError.setAttribute("aria-invalid", false);
+  }
+  return valid;
+  
+}
+
+
+
+
+ 
+
+
+

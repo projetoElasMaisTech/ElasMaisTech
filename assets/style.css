@@ -16,18 +16,18 @@ body{
   max-width: 200px;
 }
 
-.header-menu ul {
+.header-menu ul, .header-menu-cadastro ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.header-menu ul li{
+.header-menu ul li, .header-menu-cadastro ul li{
   list-style: none;
   padding: 10px;
 }
 
-.header-menu a{
+.header-menu a, .header-menu-cadastro a{
   text-decoration: none;
   text-transform: capitalize;
   color: #190F55;
@@ -83,20 +83,30 @@ footer{
   
 }
 
-#nameError, #emailError, #passwordError {
+#nameError, #emailError, #passwordError, #emailLoginError {
   display: none;
 }
 
-#nameError, #emailError, #passwordError {
+#nameError, #emailError, #passwordError, #emailLoginError {
   display: none;
   font-size: 0.8em;
 }
 
-#nameError.visible, #emailError.visible, #passwordError.visible {
+#nameError.visible, #emailError.visible, #passwordError.visible, #emailLoginError.visible {
   display: block;
   color: red;
 }
 
 input.invalid {
   border-color: red;
+}
+
+/* login */
+
+.header-menu{
+  display: none;
+}
+
+.header-menu.visible {
+  display: block;
 }
