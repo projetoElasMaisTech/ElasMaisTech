@@ -22,7 +22,7 @@ body{
   justify-content: space-between;
 }
 
-.header-menu ul li, .header-menu-cadastro ul li{
+.header-menu ul li, .header-menu-logout ul li{
   list-style: none;
   padding: 10px;
 }
@@ -101,7 +101,19 @@ input.invalid {
   border-color: red;
 }
 
-/* login */
+/* tela de login */
+
+.login-redirect{
+  display: block;
+  padding-top:16px;
+}
+
+.login-link {
+  text-decoration: underline;
+  color: #CB6CE6;
+}
+
+
 
 
 
