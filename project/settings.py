@@ -138,8 +138,6 @@ ENABLE_USER_ACTIVATION = False
 DISABLE_USERNAME = True
 LOGIN_VIA_EMAIL = True
 LOGIN_VIA_EMAIL_OR_USERNAME = False
-LOGIN_REDIRECT_URL = 'index'
-LOGIN_URL = 'accounts:log-in'
 USE_REMEMBER_ME = True
 
 SIGN_UP_FIELDS = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']

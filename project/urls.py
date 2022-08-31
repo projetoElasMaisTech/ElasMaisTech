@@ -15,20 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import lista_eventos, login_user,submit_login, logout_user,evento_user, submit_evento,delete_evento,json_lista_evento
-from django.views.generic import RedirectView 
+from core.views import welcome, login_user, logout_user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('project/',lista_eventos),
-    path('project/evento/<int:id_usuario>',json_lista_evento),
-    path('',RedirectView.as_view(url='/project/')),
-    path('login/',login_user),
-    path('login/submit',submit_login),
-    path('logout/',logout_user),
-    path('project/evento/',evento_user),
-    path('project/evento/submit',submit_evento),
-    path('project/evento/delete/<int:id_evento>', delete_evento)
-
+    path('',login_user),
+    path('home/',welcome),
+    path('home/submit',logout_user),
 ] 
 
