@@ -14,7 +14,6 @@ import os
 import dj_database_url
 from dotenv import load_dotenv
 from os import environ
-from pathlib import Path
 
 load_dotenv()
 
@@ -140,6 +139,3 @@ LOGIN_VIA_EMAIL = True
 LOGIN_VIA_EMAIL_OR_USERNAME = False
 USE_REMEMBER_ME = True
 
-SIGN_UP_FIELDS = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
-if DISABLE_USERNAME:
-    SIGN_UP_FIELDS = ['first_name', 'last_name', 'email', 'password1', 'password2']

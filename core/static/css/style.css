@@ -32,36 +32,32 @@ body{
   text-transform: capitalize;
   color: #190F55;
 }
+
 .header-menu a:hover{
   
   color:#D50087;
 }
 
-
 .intro{
-  background-image: url('/assets/img/10168.jpg');
+  background-image: url('../img/10168.jpg');
   background-size:50%;
   background-repeat: no-repeat;
-background-position: right;
-display: flex;
-align-items: center;
-min-height: 350px;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
 }
 
 .about-bg{
   background-color: #f9f9f9;
 }
+
 .about{
   display:flex;
   flex-direction: row-reverse;
   padding:20px;
   background-color: #f9f9f9;
   text-align: center;
-  
-}
-
-button .span {
-  
 }
 
 footer{
@@ -113,6 +109,13 @@ input.invalid {
   color: #CB6CE6;
 }
 
+.login-error{
+  color: red;
+}
+
+.login-success{
+  color: green;
+}
 
 
 

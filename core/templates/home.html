@@ -29,8 +29,7 @@
   </div>
   <div class="header-menu-logout">
     <ul>
-      <form name="logout_user" id="logout_user" action="submit" method="POST">
-        <!-- <input type="hidden" name="type_form" id="type_form" value="logout"> -->
+      <form name="logout_user" id="logout_user" action="logout_user" method="POST">
         {% csrf_token %}
           <li>
             <button type="submit" class="btn btn-primary">
