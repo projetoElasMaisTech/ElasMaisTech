@@ -4,7 +4,14 @@ const password = document.querySelector('#inputPassword');
  const nameError = document.getElementById("nameError");
  const emailError = document.getElementById("emailError");
  const menuLogado = document.getElementsByClassName("header-menu");
- const emailLogin = document.getElementById("loginEmail")
+ const emailLogin = document.getElementById("loginEmail");
+ const newPassword = document.getElementById("newPassword");
+ const newPasswordConfirm = document.getElementById("newPasswordConfirm");
+
+newPassword.addEventListener('focusout', validateNewPassword);
+newPasswordConfirm.addEventListener('focusout', validateNewPasswordConfirm);
+
+
 
 
 
@@ -92,9 +99,43 @@ function validateEmailLogin(e) {
   
 }
 
+//recuperação de senha
 
+function validateNewPassword(e){
+  e.preventDefault();
+  let valid = true;
 
+  if (!newPassword.value) {
+    newPasswordError.classList.add("visible");
+   newPassword.classList.add("invalid");
+    newPasswordError.setAttribute("aria-hidden", false);
+    newPasswordError.setAttribute("aria-invalid", true);
+  } else {
+    newPasswordError.classList.remove("visible");
+    newPassword.classList.remove("invalid");
+    newPasswordError.setAttribute("aria-hidden", true);
+    newPasswordError.setAttribute("aria-invalid", false);
+  }
+  return valid;
+}
 
+function validateNewPasswordConfirm(e){
+  e.preventDefault();
+  let valid = true;
+
+  if (!newPasswordConfirm.value) {
+    newPasswordConfirmError.classList.add("visible");
+   newPasswordConfirm.classList.add("invalid");
+    newPasswordConfirmError.setAttribute("aria-hidden", false);
+    newPasswordConfirmError.setAttribute("aria-invalid", true);
+  } else {
+    newPasswordConfirmError.classList.remove("visible");
+    newPasswordConfirm.classList.remove("invalid");
+    newPasswordConfirmError.setAttribute("aria-hidden", true);
+    newPasswordConfirmError.setAttribute("aria-invalid", false);
+  }
+  return valid;
+}
  
 
 

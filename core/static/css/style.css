@@ -79,16 +79,16 @@ footer{
   
 }
 
-#nameError, #emailError, #passwordError, #emailLoginError {
+#nameError, #emailError, #passwordError, #emailLoginError, #newPasswordError {
   display: none;
 }
 
-#nameError, #emailError, #passwordError, #emailLoginError {
+#nameError, #emailError, #passwordError, #emailLoginError, #newPasswordError, #newPasswordConfirmError{
   display: none;
   font-size: 0.8em;
 }
 
-#nameError.visible, #emailError.visible, #passwordError.visible, #emailLoginError.visible {
+#nameError.visible, #emailError.visible, #passwordError.visible, #emailLoginError.visible, #newPasswordError.visible, #newPasswordConfirmError.visible{
   display: block;
   color: red;
 }
@@ -118,5 +118,20 @@ input.invalid {
 }
 
 
+/*recuperação de senha*/
+.well{
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+
+.btn-large{
+  width: 100%;
+}
+
+.title{
+  margin-bottom:20px;
+}
 
