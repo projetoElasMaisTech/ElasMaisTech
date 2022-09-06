@@ -60,6 +60,11 @@ body{
   text-align: center;
 }
 
+.modal-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
 footer{
   margin: 0 auto;
   padding:15px;
@@ -120,7 +125,7 @@ input.invalid {
 
 /*recuperação de senha*/
 .well{
-  display: flex;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;

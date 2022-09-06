@@ -16,8 +16,8 @@
   <div class="header-logo">
     <img src="{% static 'img/ELAS+TECH-2-removebg-preview.png' %}" alt="Elas+Tech">
   </div>
- 
- 
+
+
 </header>
 <section class="container intro">
   <div class="content-text col-6">
@@ -34,16 +34,16 @@
     </button>
     <span class="login-redirect">Já possui uma conta? <a class="login-link" type="button" data-bs-toggle="modal" data-bs-target="#modal-login">Faça seu login</a></span>
     {% for message in messages %}
-      {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %} 
-        <div class="login-error mt-2">
-            <strong>Error: </strong>{{message}}
-        </div>
-      {% endif %}
-      {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %} 
-        <div class="login-success mt-2">
-            <strong>{{message}}</strong>
-        </div>
-      {% endif %}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+    <div class="login-error mt-2">
+      <strong>Error: </strong>{{message}}
+    </div>
+    {% endif %}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+    <div class="login-success mt-2">
+      <strong>{{message}}</strong>
+    </div>
+    {% endif %}
     {% endfor %}
     <!-- Modal Cadastro-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -70,11 +70,11 @@
               <div class="row mb-3">
                 <label for="inputEmail" class="col-sm-2 col-form-label">E-mail: </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Digite seu e-mail"required>
+                  <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Digite seu e-mail" required>
                   <span role="alert" id="emailError" aria-hidden="true">
                     Digite um endereço de e-mail válido
                   </span>
-                  
+
                 </div>
               </div>
               <div class="row mb-3">
@@ -94,7 +94,7 @@
                 <option value="4">não-binário</option>
               </select>
               <div class="modal-footer">
-                <span class="recovery-redirect"><a class="recovery-link" type="button" data-bs-toggle="modal" data-bs-target="#modal-recovery">Recuperar sua senha</a></span>
+
                 <button type="submit" class="btn btn-primary">Criar conta</button>
               </div>
             </form>
@@ -118,25 +118,28 @@
             <form method="post" name="login" id="login">
               {% csrf_token %}
               <div class="row mb-3">
-                <label for="loginEmail" class="col-sm-2 col-form-label">E-mail: </label></div>
+                <label for="loginEmail" class="col-sm-2 col-form-label">E-mail: </label>
+
                 <div class="col-sm-10">
                   <input type="email" class="form-control" id="loginEmail" name="loginEmail">
                   <span role="alert" id="emailLoginError" aria-hidden="true">
                     Digite um endereço de e-mail válido
                   </span>
                 </div>
-                </div>
               </div>
               <div class="row mb-3">
                 <label for="loginPassword" class="col-sm-2 col-form-label">Senha: </label>
+
                 <div class="col-sm-10">
                   <input type="password" class="form-control" id="loginPassword" name="loginPassword">
                 </div>
               </div>
               <div class=" modal-footer">
                 <span class="recovery-redirect"><a class="recovery-link" type="button" data-bs-toggle="modal" data-bs-target="#modal-recovery">Recuperar sua senha</a></span>
+             
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button class="btn btn-primary" type="submit" >Acessar</button>
+                <button class="btn btn-primary" type="submit">Acessar</button>
+       
               </div>
             </form>
           </div>
