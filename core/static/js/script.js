@@ -1,25 +1,19 @@
- const userName = document.getElementById('inputName');
+const userName = document.getElementById('inputName');
 const email = document.querySelector('#inputEmail');
 const password = document.querySelector('#inputPassword');
- const nameError = document.getElementById("nameError");
- const emailError = document.getElementById("emailError");
- const menuLogado = document.getElementsByClassName("header-menu");
- const emailLogin = document.getElementById("loginEmail");
- const newPassword = document.getElementById("newPassword");
- const newPasswordConfirm = document.getElementById("newPasswordConfirm");
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+const menuLogado = document.getElementsByClassName("header-menu");
+const emailLogin = document.getElementById("loginEmail");
+const newPassword = document.getElementById("newPassword");
+const newPasswordConfirm = document.getElementById("newPasswordConfirm");
 
 newPassword.addEventListener('focusout', validateNewPassword);
 newPasswordConfirm.addEventListener('focusout', validateNewPasswordConfirm);
-
-
-
-
-
 userName.addEventListener('focusout', validateName);
 email.addEventListener('focusout', validateEmail);
 password.addEventListener('focusout', validatePassword);
 emailLogin.addEventListener('focusout', validateEmailLogin);
-
 
 
 function validateName(e) {
@@ -28,7 +22,7 @@ function validateName(e) {
 
   if (!userName.value) {
     nameError.classList.add("visible");
-   userName.classList.add("invalid");
+    userName.classList.add("invalid");
     nameError.setAttribute("aria-hidden", false);
     nameError.setAttribute("aria-invalid", true);
   } else {
@@ -45,18 +39,18 @@ function validateEmail(e) {
   let valid = true;
 
   if (!email.value) {
-   emailError.classList.add("visible");
-   email.classList.add("invalid");
-   emailError.setAttribute("aria-hidden", false);
-   emailError.setAttribute("aria-invalid", true);
+    emailError.classList.add("visible");
+    email.classList.add("invalid");
+    emailError.setAttribute("aria-hidden", false);
+    emailError.setAttribute("aria-invalid", true);
   } else {
-   emailError.classList.remove("visible");
+    emailError.classList.remove("visible");
     email.classList.remove("invalid");
-   emailError.setAttribute("aria-hidden", true);
-   emailError.setAttribute("aria-invalid", false);
+    emailError.setAttribute("aria-hidden", true);
+    emailError.setAttribute("aria-invalid", false);
   }
   return valid;
-  
+
 }
 
 function validatePassword(e) {
@@ -64,18 +58,18 @@ function validatePassword(e) {
   let valid = true;
 
   if (!password.value) {
-   passwordError.classList.add("visible");
-   password.classList.add("invalid");
-   passwordError.setAttribute("aria-hidden", false);
-   passwordError.setAttribute("aria-invalid", true);
+    passwordError.classList.add("visible");
+    password.classList.add("invalid");
+    passwordError.setAttribute("aria-hidden", false);
+    passwordError.setAttribute("aria-invalid", true);
   } else {
-   passwordError.classList.remove("visible");
+    passwordError.classList.remove("visible");
     password.classList.remove("invalid");
-   passwordError.setAttribute("aria-hidden", true);
-   passwordError.setAttribute("aria-invalid", false);
+    passwordError.setAttribute("aria-hidden", true);
+    passwordError.setAttribute("aria-invalid", false);
 
   }
-  
+
   return valid;
 }
 
@@ -85,29 +79,29 @@ function validateEmailLogin(e) {
   let valid = true;
 
   if (!emailLogin.value) {
-   emailLoginError.classList.add("visible");
-   emailLogin.classList.add("invalid");
-   emailLoginError.setAttribute("aria-hidden", false);
-   emailLoginError.setAttribute("aria-invalid", true);
+    emailLoginError.classList.add("visible");
+    emailLogin.classList.add("invalid");
+    emailLoginError.setAttribute("aria-hidden", false);
+    emailLoginError.setAttribute("aria-invalid", true);
   } else {
     emailLoginError.classList.remove("visible");
-   emailLogin.classList.remove("invalid");
-   emailLoginError.setAttribute("aria-hidden", true);
-   emailLoginError.setAttribute("aria-invalid", false);
+    emailLogin.classList.remove("invalid");
+    emailLoginError.setAttribute("aria-hidden", true);
+    emailLoginError.setAttribute("aria-invalid", false);
   }
   return valid;
-  
+
 }
 
 //recuperação de senha
 
-function validateNewPassword(e){
+function validateNewPassword(e) {
   e.preventDefault();
   let valid = true;
 
   if (!newPassword.value) {
     newPasswordError.classList.add("visible");
-   newPassword.classList.add("invalid");
+    newPassword.classList.add("invalid");
     newPasswordError.setAttribute("aria-hidden", false);
     newPasswordError.setAttribute("aria-invalid", true);
   } else {
@@ -119,13 +113,13 @@ function validateNewPassword(e){
   return valid;
 }
 
-function validateNewPasswordConfirm(e){
+function validateNewPasswordConfirm(e) {
   e.preventDefault();
   let valid = true;
 
   if (!newPasswordConfirm.value) {
     newPasswordConfirmError.classList.add("visible");
-   newPasswordConfirm.classList.add("invalid");
+    newPasswordConfirm.classList.add("invalid");
     newPasswordConfirmError.setAttribute("aria-hidden", false);
     newPasswordConfirmError.setAttribute("aria-invalid", true);
   } else {
@@ -136,7 +130,7 @@ function validateNewPasswordConfirm(e){
   }
   return valid;
 }
- 
+
 
 
 

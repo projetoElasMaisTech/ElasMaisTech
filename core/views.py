@@ -1,8 +1,9 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth import authenticate , login, logout
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from core.models import Gender, User
+
 
 # Create your views here.
 
@@ -23,7 +24,6 @@ def login_user(request):
 	return render(request,'index.html')
 
 def user_submit(request):
-	
 	if request.POST:
 		username_input = request.POST.get('inputEmail')
 		user_registers = User.objects.filter(username=username_input)

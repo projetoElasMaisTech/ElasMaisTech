@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0 auto;
 
 }
@@ -9,38 +9,41 @@ body{
   justify-content: space-between;
   align-items: center;
   background-color: #f9f9f9;
-  padding:10px 30px;
+  padding: 10px 30px;
 }
 
-.header-logo img{
+.header-logo img {
   max-width: 200px;
 }
 
-.header-menu ul, .header-menu-cadastro ul {
+.header-menu ul,
+.header-menu-cadastro ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.header-menu ul li, .header-menu-logout ul li{
+.header-menu ul li,
+.header-menu-logout ul li {
   list-style: none;
   padding: 10px;
 }
 
-.header-menu a, .header-menu-cadastro a{
+.header-menu a,
+.header-menu-cadastro a {
   text-decoration: none;
   text-transform: capitalize;
   color: #190F55;
 }
 
-.header-menu a:hover{
-  
-  color:#D50087;
+.header-menu a:hover {
+
+  color: #D50087;
 }
 
-.intro{
+.intro {
   background-image: url('../img/10168.jpg');
-  background-size:50%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
@@ -48,52 +51,66 @@ body{
   min-height: 350px;
 }
 
-.about-bg{
+.about-bg {
   background-color: #f9f9f9;
 }
 
-.about{
-  display:flex;
+.about {
+  display: flex;
   flex-direction: row-reverse;
-  padding:20px;
+  padding: 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
 
-.modal-footer{
+.modal-footer {
   display: flex;
   justify-content: space-between;
 }
 
-footer{
+footer {
   margin: 0 auto;
-  padding:15px;
+  padding: 15px;
   text-align: center;
 }
 
-@media only screen and (max-width: 768px)  {
-  .intro{
+@media only screen and (max-width: 768px) {
+  .intro {
     background-image: none;
     background-size: 100%;
   }
 
-  .content-text{
+  .content-text {
     width: 100%;
     text-align: center;
   }
-  
+
 }
 
-#nameError, #emailError, #passwordError, #emailLoginError, #newPasswordError {
+#nameError,
+#emailError,
+#passwordError,
+#emailLoginError,
+#newPasswordError {
   display: none;
 }
 
-#nameError, #emailError, #passwordError, #emailLoginError, #newPasswordError, #newPasswordConfirmError{
+#nameError,
+#emailError,
+#passwordError,
+#emailLoginError,
+#newPasswordError,
+#newPasswordConfirmError {
   display: none;
   font-size: 0.8em;
 }
 
-#nameError.visible, #emailError.visible, #passwordError.visible, #emailLoginError.visible, #newPasswordError.visible, #newPasswordConfirmError.visible{
+#nameError.visible,
+#emailError.visible,
+#passwordError.visible,
+#emailLoginError.visible,
+#newPasswordError.visible,
+#newPasswordConfirmError.visible {
   display: block;
   color: red;
 }
@@ -104,9 +121,9 @@ input.invalid {
 
 /* tela de login */
 
-.login-redirect{
+.login-redirect {
   display: block;
-  padding-top:16px;
+  padding-top: 16px;
 }
 
 .login-link {
@@ -114,29 +131,34 @@ input.invalid {
   color: #CB6CE6;
 }
 
-.login-error{
+.login-error {
   color: red;
 }
 
-.login-success{
+.login-success {
   color: green;
 }
 
 
 /*recuperação de senha*/
-.well{
+.well {
   height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  align-content: center;
 }
 
-
-.btn-large{
+.btn-large {
   width: 100%;
 }
 
-.title{
-  margin-bottom:20px;
+.title {
+  margin-bottom: 20px;
 }
 
+.errorlist{
+  color: red;
+  font-weight: bold;
+}
