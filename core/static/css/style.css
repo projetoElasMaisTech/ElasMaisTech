@@ -84,7 +84,6 @@ footer {
     width: 100%;
     text-align: center;
   }
-
 }
 
 #nameError,
@@ -158,40 +157,43 @@ input.invalid {
   margin-bottom: 20px;
 }
 
-.errorlist{
+.errorlist {
   color: red;
   font-weight: bold;
 }
 
-.input-button{
+.input-button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-change-password{
+.input-email{
+  width: 83%;
+}
+
+.form-change-password {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
 }
 
-.form-change-password ul{
+.form-change-password ul {
   order: 1;
   font-size: 12px;
   margin-top: 20px;
-
 }
 
-.button-change{
- width: 250px;
- padding:0 10px;
+.button-change {
+  width: 250px;
+  padding: 0 10px;
 }
 
-.form-change-password p{
+.form-change-password p {
   max-width: 250px;
 }
 
-.form-change-password p input{ 
+.form-change-password p input {
   width: 100%;
 }
