@@ -62,7 +62,38 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
+.titulo-cursos{
+  text-align: center;
+  margin:20px
+}
 
+.title-categoria{
+  margin:40px auto;
+ font-size: 1.5rem;
+}
+
+.grid-cursos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-curso{
+  background-color: #c5c5c5;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 320px;
+  justify-content: center;
+}
+.card-curso p{
+text-align: center;
+}
+
+.card-curso iframe{
+  border-radius: 10px 10px 0 0
+}
 .modal-footer {
   display: flex;
   justify-content: space-between;
@@ -83,6 +114,16 @@ footer {
   .content-text {
     width: 100%;
     text-align: center;
+  }
+
+  .grid-cursos{
+    grid-template-columns: 1fr;
+    gap:20px;
+    justify-content: center
+  }
+  .card-curso{
+  max-width: 300px;
+  padding-top: 0;
   }
 }
 
@@ -197,3 +238,4 @@ input.invalid {
 .form-change-password p input {
   width: 100%;
 }
+
