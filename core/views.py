@@ -50,3 +50,7 @@ def logout_user(request):
 @login_required(login_url='/')
 def courses (request):
 	return render(request,'access_content.html')
+
+@login_required(login_url='/')
+def pratique (request):
+	return render(request,'pratique.html')
