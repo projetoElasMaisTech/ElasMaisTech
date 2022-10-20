@@ -52,5 +52,5 @@ def courses (request):
 	return render(request,'access_content.html')
 
 @login_required(login_url='/')
-def pratique (request):
-	return render(request,'pratique.html')
+def practice (request):
+	return render(request,'practice.html')

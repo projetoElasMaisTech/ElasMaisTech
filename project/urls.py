@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import home, login_user, logout_user, pratique, user_submit, courses, pratique
+from core.views import home, login_user, logout_user, user_submit, courses, practice
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -30,6 +30,6 @@ urlpatterns = [
     path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(template_name="password_reset_complete.html"), name="password_reset_complete"),
     path('password_reset_email/', auth_views.PasswordResetView.as_view(template_name="password_reset_emal.html"), name="password_reset_emal"),
     path('home/courses/', courses, name="courses"),
-    path('home/pratique/', pratique, name="pratique")
+    path('home/practice/', practice, name="practice")
 ] 
 
