@@ -30,15 +30,10 @@
       </div>
       <div class="header-menu-logout">
         <ul>
-          <form name="logout_user" id="logout_user" action="logout_user" method="POST">
-            {% csrf_token %}
-            <li>
-              <button type="submit" class="btn btn-primary">
-                Sair
-              </button>
-            </li>
-          </form>
-        </ul>
+          <li>
+            <a class="btn btn-primary" href="{% url 'logout_user' %}">Sair</a>
+          </li>
+      </ul>
       </div>
     </header>
 

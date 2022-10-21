@@ -43,9 +43,8 @@ def user_submit(request):
 	return redirect('/')
 
 def logout_user(request):
-	if request.POST:
-		logout(request)
-		return redirect('/')
+	logout(request)
+	return redirect('/')
 
 @login_required(login_url='/')
 def courses (request):
