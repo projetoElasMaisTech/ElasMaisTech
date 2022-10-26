@@ -21,8 +21,8 @@
       </div>
       <div class="header-menu">
         <ul>
-          <li> <a href="courses/">cursos</a></li>
-          <li> <a href="http://">pratique</a></li>
+          <li> <a href="{% url 'courses' %}">cursos</a></li>
+          <li> <a href="{% url 'practice' %}">pratique</a></li>
           <li> <a href="http://">vagas</a></li>
           <li> <a href="http://">biblioteca virtual</a></li>
           <li> <a href="http://">conectadas</a></li>
@@ -30,15 +30,10 @@
       </div>
       <div class="header-menu-logout">
         <ul>
-          <form name="logout_user" id="logout_user" action="logout_user" method="POST">
-            {% csrf_token %}
-            <li>
-              <button type="submit" class="btn btn-primary">
-                Sair
-              </button>
-            </li>
-          </form>
-        </ul>
+          <li>
+            <a class="btn btn-primary" href="{% url 'logout_user' %}">Sair</a>
+          </li>
+      </ul>
       </div>
     </header>
 

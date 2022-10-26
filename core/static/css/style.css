@@ -74,12 +74,16 @@ body {
 }
 
 .grid-cursos{
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .card-curso{
-  background-color: #c5c5c5;
+  background-color: #1b7fcc30;
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -124,7 +128,9 @@ footer {
   .grid-cursos{
     grid-template-columns: 1fr;
     gap:20px;
-    justify-content: center
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .card-curso{
   max-width: 300px;
