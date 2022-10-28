@@ -23,8 +23,8 @@
       <ul>
         <li> <a href="{% url 'courses' %}">cursos</a></li>
         <li> <a href="{% url 'practice' %}">pratique</a></li>
-        <li> <a href="http://">vagas</a></li>
-        <li> <a href="http://">biblioteca virtual</a></li>
+        <li> <a href="{% url 'jobs' %}">vagas</a></li>
+        <li> <a href="{% url 'library' %}">biblioteca virtual</a></li>
         <li> <a href="http://">conectadas</a></li>
       </ul>
     </div>
@@ -36,31 +36,31 @@
       </ul>
     </div>
   </header>
-  <section class="container intro-cursos">
-    <div class="titulo-cursos">
+  <section class="container">
+    <div class="titulo">
       <h1>Confira abaixo um compilado de cursos gratuitos</h1>
       <p>Abaixo você encontra uma seleção de cursos, apostilas e materiais referentes à programação que foram disponibilizados de forma gratuita na internet.
       </p>
 
       <section class="container">
         <h2 class="title-categoria">Para quem prefere estudar com vídeos</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-          <div class="card-curso">
+          <div class="cards">
             <iframe width="300" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3>Curso em vídeo</h3>
             <p> A plataforma oferece cursos gratuitos de diversos tópicos relacionados a TI. Aqui você encontra um curso completo de html e css.</p>
             <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&ab_channel=CursoemV%C3%ADdeo">Acesse a playlist no youtube</a>
 
           </div>
-          <div class="card-curso">
+          <div class="cards">
             <iframe width="300" src="https://www.youtube.com/embed/McKNP3g6VBA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3>Programação Web</h3>
             <p> Curso com 20 aulas sobre conceitos importantes de javascript. Se você se interessa por programação web, vale a pena conferir</p>
             <a href="https://www.youtube.com/watch?v=McKNP3g6VBA&ab_channel=Programa%C3%A7%C3%A3oWeb">Acesse a playlist no youtube</a>
 
           </div>
-          <div class="card-curso">
+          <div class="cards">
             <iframe width="300" src="https://www.youtube.com/embed/-5kJdbkG90g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3>Origamid</h3>
             <p>Apesar de possuir cursos pagos, a Origamid também conta com ótimos materiais gratuitos em seu canal do youtube.</p>
@@ -70,22 +70,22 @@
       </section>
       <section class="container">
         <h2 class="title-categoria">Para quem aprende melhor lendo</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-          <div class="card-curso">
+          <div class="cards">
 
             <h3>mdn web docs</h3>
             <p> Neste link você encontra diversos tutoriais para iniciantes em html</p>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML#tutoriais_para_iniciantes">Ir para o artigo</a>
 
           </div>
-          <div class="card-curso">
+          <div class="cards">
             <h3>CSS Tricks</h3>
             <p>Aqui você encontra dicas de nível iniciante a avançado sobre o uso de CSS</p>
             <a href="https://css-tricks.com/">Ir para o website</a>
 
           </div>
-          <div class="card-curso">
+          <div class="cards">
             <h3>FreeCodeCamp</h3>
             <p>Diversos cursos gratuitos para você aprender a programar</p>
             <a href="https://www.freecodecamp.org/">Ver curso</a>

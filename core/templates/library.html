@@ -1,10 +1,11 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,65 +18,60 @@
 <body>
     <header class="header">
         <div class="header-logo">
-            <img src="../static/img/ELAS+TECH-2-removebg-preview.png" alt="Elas+Tech">
+            <img src="{% static 'img/ELAS+TECH-2-removebg-preview.png' %}" alt="Elas+Tech">
         </div>
         <div class="header-menu">
             <ul>
-                <li> <a href="courses/">cursos</a></li>
-                <li> <a href="http://">pratique</a></li>
-                <li> <a href="http://">vagas</a></li>
-                <li> <a href="http://">biblioteca virtual</a></li>
+                <li> <a href="{% url 'courses' %}">cursos</a></li>
+                <li> <a href="{% url 'practice' %}">pratique</a></li>
+                <li> <a href="{% url 'jobs' %}">vagas</a></li>
+                <li> <a href="{% url 'library' %}">biblioteca virtual</a></li>
                 <li> <a href="http://">conectadas</a></li>
             </ul>
         </div>
         <div class="header-menu-logout">
             <ul>
-                <form name="logout_user" id="logout_user" action="logout_user" method="POST">
-
-                    <li>
-                        <button type="submit" class="btn btn-primary">
-                            Sair
-                        </button>
-                    </li>
-                </form>
+                <li>
+                    <a class="btn btn-primary" href="{% url 'logout_user' %}">Sair</a>
+                </li>
             </ul>
         </div>
     </header>
-    <section class="container intro-biblioteca">
-        <div class="titulo-biblioteca">
+    <section class="container">
+        <div class="titulo">
             <br />
             <h2>A biblioteca virtual conta com algumas apostilas para diversas áreas de conhecimento </h2>
             <p>Buscando facilitar a vida dos usuários, a Biblioteca Virtual disponibiliza apostilas para download! Confira abaixo: 
             </p>
             <br />
 
-            <section class="container">
+            <section class="container container-flex-center">
 
-                <div class="card-biblioteca">
+                <div class="cards">
                     <h5>Lógica de Programação</h5>
                     <a target="_blank" href="https://www.apostilando.com/sessao/29/logica-de-programacao">Acesse o site</a>
                 </div>
                 <br />
 
-                <div class="card-biblioteca">
+                <div class="cards">
                     <h5>Html, CSS e Javascript</h5>
                     <a target="_blank" href="https://www.caelum.com.br/apostila/apostila-html-css-javascript.pdf">Acesse o site</a>
                 </div>
                 <br />
 
-                <div class="card-biblioteca">
+                <div class="cards">
                     <h5>Java</h5>
                     <a target="_blank" href="https://www.caelum.com.br/apostila/apostila-java-orientacao-objetos.pdf">Acesse o site</a>
                 </div>
                 <br />
 
-                <div class="card-biblioteca">
+                <div class="cards">
                     <h5>Python</h5>
                     <a target="_blank" href="https://www.caelum.com.br/apostila/apostila-python-orientacao-a-objetos.pdf">Acesse o site</a>
                 </div>
                 <br />
 
-                <div class="card-biblioteca">
+                <div class="cards">
                     <h5>C e C++</h5>
                     <a target="_blank" href="https://www.apostilando.com/sessao/11/c-e-c++">Acesse o site</a>
                 </div>

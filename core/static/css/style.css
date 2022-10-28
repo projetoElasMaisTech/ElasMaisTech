@@ -63,7 +63,7 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
-.titulo-cursos{
+.titulo{
   text-align: center;
   margin:20px
 }
@@ -73,7 +73,7 @@ body {
  font-size: 1.5rem;
 }
 
-.grid-cursos{
+.grid{
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: row;
@@ -82,7 +82,7 @@ body {
   align-content: center;
 }
 
-.card-curso{
+.cards{
   background-color: #1b7fcc30;
   padding: 10px;
   border-radius: 10px;
@@ -92,11 +92,11 @@ body {
   max-width: 320px;
   justify-content: center;
 }
-.card-curso p{
+.cards p{
 text-align: center;
 }
 
-.card-curso iframe{
+.cards iframe{
   border-radius: 10px 10px 0 0
 }
 .modal-footer {
@@ -125,14 +125,14 @@ footer {
     text-align: center;
   }
 
-  .grid-cursos{
+  .grid{
     grid-template-columns: 1fr;
     gap:20px;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .card-curso{
+  .cards{
   max-width: 300px;
   padding-top: 0;
   }
@@ -250,3 +250,13 @@ input.invalid {
   width: 100%;
 }
 
+.container-flex-center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.container-flex-center .cards{
+  width: 290px;
+}
