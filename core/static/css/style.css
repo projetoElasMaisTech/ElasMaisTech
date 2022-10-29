@@ -21,6 +21,7 @@ body {
 .header-menu-cadastro ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -74,10 +75,9 @@ body {
 }
 
 .grid{
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  gap:20px;
   justify-content: space-around;
   align-content: center;
 }
@@ -95,7 +95,9 @@ body {
 .cards p{
 text-align: center;
 }
-
+.cards h5{
+margin: 20px auto;
+}
 .cards iframe{
   border-radius: 10px 10px 0 0
 }
@@ -113,7 +115,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .header {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
   .intro {
     background-image: none;
