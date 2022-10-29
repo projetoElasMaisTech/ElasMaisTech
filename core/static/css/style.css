@@ -133,6 +133,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-items: center;
   }
   .cards{
   max-width: 300px;
@@ -252,13 +253,11 @@ input.invalid {
   width: 100%;
 }
 
-.container-flex-center {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+.grid-center{
+  display: grid;
+  justify-content: center;
 }
 
-.container-flex-center .cards{
-  width: 290px;
+.grid-center .grid{
+  gap: 55px;
 }
