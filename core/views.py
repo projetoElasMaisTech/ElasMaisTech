@@ -53,3 +53,11 @@ def courses (request):
 @login_required(login_url='/')
 def practice (request):
 	return render(request,'practice.html')
+
+@login_required(login_url='/')
+def library (request):
+	return render(request,'library.html')
+
+@login_required(login_url='/')
+def jobs (request):
+	return render(request,'jobs.html')
