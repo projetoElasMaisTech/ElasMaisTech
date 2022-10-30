@@ -21,6 +21,7 @@ body {
 .header-menu-cadastro ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -63,7 +64,7 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
-.titulo-cursos{
+.titulo{
   text-align: center;
   margin:20px
 }
@@ -73,16 +74,15 @@ body {
  font-size: 1.5rem;
 }
 
-.grid-cursos{
-  display: flex;
+.grid{
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  gap:20px;
   justify-content: space-around;
   align-content: center;
 }
 
-.card-curso{
+.cards{
   background-color: #1b7fcc30;
   padding: 10px;
   border-radius: 10px;
@@ -92,11 +92,13 @@ body {
   max-width: 320px;
   justify-content: center;
 }
-.card-curso p{
+.cards p{
 text-align: center;
 }
-
-.card-curso iframe{
+.cards h5{
+margin: 20px auto;
+}
+.cards iframe{
   border-radius: 10px 10px 0 0
 }
 .modal-footer {
@@ -113,7 +115,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .header {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
   .intro {
     background-image: none;
@@ -125,14 +127,15 @@ footer {
     text-align: center;
   }
 
-  .grid-cursos{
+  .grid{
     grid-template-columns: 1fr;
     gap:20px;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-items: center;
   }
-  .card-curso{
+  .cards{
   max-width: 300px;
   padding-top: 0;
   }
@@ -250,3 +253,11 @@ input.invalid {
   width: 100%;
 }
 
+.grid-center{
+  display: grid;
+  justify-content: center;
+}
+
+.grid-center .grid{
+  gap: 55px;
+}

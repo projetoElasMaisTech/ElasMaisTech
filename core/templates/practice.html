@@ -22,8 +22,8 @@
       <ul>
         <li> <a href="{% url 'courses' %}">cursos</a></li>
         <li> <a href="{% url 'practice' %}">pratique</a></li>
-        <li> <a href="http://">vagas</a></li>
-        <li> <a href="http://">biblioteca virtual</a></li>
+        <li> <a href="{% url 'jobs' %}">vagas</a></li>
+        <li> <a href="{% url 'library' %}">biblioteca virtual</a></li>
         <li> <a href="http://">conectadas</a></li>
       </ul>
     </div>
@@ -35,29 +35,29 @@
     </ul>
     </div>
   </header>
-  <section class="container intro-cursos">
-    <div class="titulo-cursos">
+  <section class="container">
+    <div class="titulo">
       <h1>Confira abaixo um compilado de questões e exercícios </h1>
       <p>Abaixo você encontra uma seleção de linguagens com algumas questões, exercícios práticos para resolver e visualizar as soluções propostas com o objetivo de praticar os conhecimentos que foram aprendidos de forma gratuita na internet.
       </p>
-      <section class="container">
+      <section class="container grid-center">
         <h2 class="title-categoria">Lógica de Programação</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>Questões </h3>
                 <p> Nesta plataforma você irá encontrar uma série de questões para serem respondidas e corrigidas sobre Lógica de Progrmação.</p>
                 <a href="https://www.questoesestrategicas.com.br/questoes/busca/assunto/logicas-de-programacao">Acesse a lista de exercicíos na web</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
               <iframe width="300" src="https://www.youtube.com/embed/9C3b3c4hYlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h3>Exercícios em vídeos</h3>
                 <p> A plataforma oferece uma playlist de vídeos com exercícios junto com suas explicações e construções do código.</p>
                 <a href="https://www.youtube.com/watch?v=9C3b3c4hYlY&list=PLuElAIt7y8x0MHwvS_ZqNDSpco6J1ZJvs">Acesse a playlist no youtube</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>+80 Exercícios</h3>
                 <p> Neste link existe mais de 80 exercícios teórico para serem realizados com gabarito das questões.</p>
                 <a href="https://fit.faccat.br/~fpereira/apostilas/exerc_resp_alg_mar2007.pdf">Acesse a lista de exercicíos na web</a>
@@ -66,23 +66,23 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container grid-center">
         <h2 class="title-categoria">Javascript</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>Questões </h3>
                 <p> Neste link você irá encontrar uma série de questões para serem respondidas e corrigidas sobre JavaScript.</p>
                 <a href="https://www.questoesestrategicas.com.br/questoes/busca/assunto/javascript">Acesse a lista de exercicíos na web</a>
               </div>
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>7 Exercícios práticos</h3>
                 <p> A plataforma oferece uma lista com 7 exercícios relacionados a Javascript sendo possivel visualizar o código com os exercicios resolvidos.</p>
                 <a href="http://professor.leonardomeirelles.com/wp/lista-de-exercicios-javascript/">Acesse a lista de exercicíos na web</a>
             </div>
           
-            <div class="card-curso">
+            <div class="cards">
                 <h3>+20 Exercícios</h3>
                 <p> Na plataforma existe mais de 20 exercícios práticos para serem realizados e com correção.</p>
                 <a href="https://oprogramador.bsb.br/aprenderjs_exercicios.php">Acesse a lista de exercicíos na web</a>
@@ -91,24 +91,24 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container grid-center">
         <h2 class="title-categoria">Java</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>Questões</h3>
                 <p> Neste link você irá encontrar uma lista de questões para serem respondidas sobre Java.</p>
                 <a href="http://professor.leonardomeirelles.com/wp/atividade-montagem-de-avaliacao/">Acesse a lista de exercicíos na web</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
               <iframe width="300" src="https://www.youtube.com/embed/njgrtVpC4r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h3>Exercícios em vídeos</h3>
                 <p> A plataforma oferece uma playlist de vídeos com exercícios junto com suas explicações e construções do código.</p>
                 <a href="https://www.youtube.com/watch?v=njgrtVpC4r4&list=PLr3SAJN7SbDtk3to7QNzPvf49RgBSRN3g">Acesse a playlist no youtube</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>+10 Exercícios</h3>
                 <p>Na plataforma existe mais de 10 exercícios práticos para serem realizados e com correção.</p>
                 <a href="http://excript.com/exercicios-resolvidos-de-java.html">Acesse a lista de exercicíos na web</a>
@@ -116,24 +116,24 @@
 
         </div>
       </section>
-      <section class="container">
+      <section class="container grid-center">
         <h2 class="title-categoria">C</h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>Questões </h3>
                 <p> Neste link você irá encontrar uma série de questões para serem respondidas e corrigidas sobre a linguagem C.</p>
                 <a href="https://www.questoesestrategicas.com.br/questoes/busca/assunto/c">Acesse a lista de exercicíos na web</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
               <iframe width="300" src="https://www.youtube.com/embed/aISV1NBigW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <h3>Exercícios em vídeos</h3>
               <p> A plataforma oferece uma playlist de vídeos com exercícios junto com suas explicações e construções do código C.</p>
               <a href="https://www.youtube.com/watch?v=aISV1NBigW4&list=PLchPL6pwIL68EZWsc55jd5P6_TYp7oMb_">Acesse a playlist no youtube</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>10 Exercícios</h3>
                 <p>Na plataforma existe mais 10 exercícios práticos para serem realizados e com correção.</p>
                 <a href="https://programacaodescomplicada.wordpress.com/complementar/">Acesse a lista de exercicíos na web</a>
@@ -141,24 +141,24 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container grid-center">
         <h2 class="title-categoria">HTML </h2>
-        <div class="grid-cursos">
+        <div class="grid">
 
-            <div class="card-curso">
+            <div class="cards">
                 <h3>Questões </h3>
                 <p> Neste link você irá encontrar uma série de questões para serem respondidas e corrigidas sobre HTML.</p>
                 <a href="https://www.questoesestrategicas.com.br/questoes/busca/assunto/html-hypertext-markup-language">Acesse a lista de exercicíos na web</a>
              </div>
 
-             <div class="card-curso">
+             <div class="cards">
               <iframe width="300"  src="https://www.youtube.com/embed/3VHGictquhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h3>Exercícios em vídeos</h3>
                 <p> A plataforma oferece uma playlist de vídeos com exercícios junto com suas explicações e construções do código.</p>
                 <a href="https://www.youtube.com/watch?v=3VHGictquhI&list=PL5R5B2sbHt3xXBxgOO8ijTmor9JAs_0oT">Acesse a playlist no youtube</a>
             </div>
 
-            <div class="card-curso">
+            <div class="cards">
               <h3>10 Exercícios</h3>
               <p>Na plataforma existe uma lista com 10 exercícios teoricos para serem realizados.</p>
               <a href="https://exerciciosresolvidos.com.br/lista-de-exercicios-de-html-basico-resolvidos">Acesse a lista de exercicíos na web</a>
