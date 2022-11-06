@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import home, login_user, logout_user, user_submit, courses, practice, library, jobs
+from core.views import home, login_user, logout_user, user_submit, courses, practice, library, jobs, connected
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -32,6 +32,7 @@ urlpatterns = [
     path('home/courses/', courses, name="courses"),
     path('home/practice/', practice, name="practice"),
     path('home/library/', library, name="library"),
-    path('home/jobs/', jobs, name="jobs")
+    path('home/jobs/', jobs, name="jobs"),
+    path('home/connected/', connected, name="connected")
 ] 
 

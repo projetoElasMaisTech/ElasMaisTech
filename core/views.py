@@ -61,3 +61,7 @@ def library (request):
 @login_required(login_url='/')
 def jobs (request):
 	return render(request,'jobs.html')
+
+@login_required(login_url='/')
+def connected (request):
+	return render(request,'connected.html')
