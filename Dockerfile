@@ -17,6 +17,7 @@ COPY manage.py .
 RUN pip3 install -r requirements.txt --cache-dir /opt/app/pip_cache
 
 EXPOSE 8000
+
     
 
 CMD ["bash", "startup.sh"]
