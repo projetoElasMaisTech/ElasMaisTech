@@ -261,3 +261,10 @@ input.invalid {
 .grid-center .grid{
   gap: 55px;
 }
+
+.discord-conectadas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
